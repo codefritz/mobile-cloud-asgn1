@@ -42,11 +42,10 @@ package org.magnum.dataup;
     \:\__\        \::/  /       \::/  /        /:/  /     \:\__\          \:\__\        
      \/__/         \/__/         \/__/         \/__/       \/__/           \/__/        
  */
-import java.util.Collection;
 
+import java.util.Collection;
 import org.magnum.dataup.model.Video;
 import org.magnum.dataup.model.VideoStatus;
-
 import retrofit.client.Response;
 import retrofit.http.Body;
 import retrofit.http.GET;

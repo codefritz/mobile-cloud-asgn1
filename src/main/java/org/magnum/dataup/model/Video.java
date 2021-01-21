@@ -17,12 +17,11 @@
  */
 package org.magnum.dataup.model;
 
-import java.util.Objects;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fluentinterface.ReflectionBuilder;
 import com.fluentinterface.builder.Builder;
+import java.util.Objects;
 
 /**
                     ___                    ___           ___                            

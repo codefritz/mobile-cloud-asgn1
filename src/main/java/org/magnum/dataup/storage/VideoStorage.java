@@ -9,10 +9,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class VideoStorage {
 
+  private long nextVideoId = 1;
   private final List<Video> videoList = new ArrayList<>();
 
-  public void add(Video video) {
+  public Video add(Video video) {
+    video.setId(nextVideoId++);
     videoList.add(video);
+    return video;
+  }
+
+  public Video getById(long id) {
+    return videoList.stream()
+        .filter(video -> video.getId() == id)
+        .findFirst().orElse(null);
   }
 
   public void remove(Video video) {
